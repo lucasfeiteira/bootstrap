@@ -48,14 +48,15 @@ header, .navbar {
     padding: 1rem .8rem;
 }
 /* Slider */
-/*
-.container-fluid {
-    padding: 0;
-}
- */
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item, .carousel-indicators {
     height: 90vh;
 } 
+
+#mainSlider .carousel-indicators {
+    height: 5vh;
+} 
+
 
 #mainSlider .carousel-caption {
     top:30%;
@@ -113,12 +114,13 @@ header, .navbar {
 
 .main-title::after {
     content: "";
-    border-top: 2px solid #333;
+    border: 2px solid #333;
     width: 15%;
     position: absolute;
     top: 60px;
     left: 42.5%;
 }
+
 
 .about-title {
     font-size: 17px;
@@ -171,5 +173,77 @@ header, .navbar {
     color: #65DAF9;
 }
 
+/* Dados */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+/* Time */
+.card {
+    text-align: center;
+}
+
+/* Trabalhe conosco */
+
+#apply-area {
+    height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+}
+
+#apply-area .apply-box {
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#pattern-img h4, #pattern-img p {
+    color: #FFF;
+}
+
+#pattern-img h4 { 
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#pattern-img p {
+    margin-bottom: 20px;
+}
+
+#apply-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #FFF;
+}
 
 
+#apply-btn:hover {
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+}
