@@ -110,5 +110,13 @@ $(document).ready(function(){
 
     }, 250);
     
+
+    // Filtro do portfólio
+    $('.filtro-btn').on('click', function () {
+
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+        
+    });
    
 });
