@@ -162,14 +162,15 @@ $(document).ready(function(){
     $(navBtn).click(function() {
         
         let btnId = $(this).attr('id');
+        console.log(btnId);
 
-        if (btnId == 'mainSlider') {
+        if (btnId == 'about-menu') {
             scrollTo = aboutSection;
-        } else if (btnId == 'about-area') {
+        } else if (btnId == 'services-menu') {
             scrollTo = servicesSection;
-        } else if (btnId == 'team-area') {
+        } else if (btnId == 'team-menu') {
             scrollTo = teamSection;
-        } else if (btnId == 'portfolio-area') {
+        } else if (btnId == 'portfolio-menu') {
             scrollTo = portfolioSection;
         } else if (btnId =='contact-menu') {
             scrollTo = contactSection;
